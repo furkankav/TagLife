@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/entryrowlayout_entrytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text=""
+        tools:background="@android:color/background_light"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/entryrowlayout_likebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/like"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            />
+
+        <Button
+            android:id="@+id/entryrowlayout_dislikebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/unlike"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            />
+
+        <Button
+            android:id="@+id/entryrowlayout_relationbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/relations"
+            android:textAlignment="center"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            tools:textAlignment="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/entryrowlayout_usernametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="User Name"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+
+                />
+            <TextView
+                android:id="@+id/entryrowlayout_creationdatetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="CreationDate"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/entryrowlayout_commentbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Comments"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            tools:textAlignment="center"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+    </LinearLayout>
+
+</LinearLayout>
